@@ -1,6 +1,5 @@
 import torch
 
-
 def save_snapshot(path, critic, target_critic, critic_optim):
     # print('adding checkpoints...')
     checkpoint_path = path + 'model.pth.tar'

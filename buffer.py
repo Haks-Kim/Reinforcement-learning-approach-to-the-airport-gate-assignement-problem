@@ -1,6 +1,5 @@
 import numpy as np
 
-
 class ReplayBuffer:
     def __init__(self, state_dim, limit):
         self.states = Memory(shape=(state_dim,), limit=limit)
