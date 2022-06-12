@@ -13,6 +13,7 @@ from buffer import ReplayBuffer
 from utils import save_snapshot, recover_snapshot, load_model
 from schedule import LinearSchedule
 
+from datetime import datetime
 import time
 import matplotlib.pyplot as plt
 from tqdm import tqdm
@@ -350,6 +351,14 @@ def save_assignment2(env,agent,info="None"):
     f.write("\nReward_per_gate : {}".format(reward_per_gate))
     f.write("\nTotal_reward    : {}".format(cumulative_reward))
     f.close()
+
+# For DQN, greedy agent
+def write_datetime(strr: str):
+    path = './'
+    f = open(path+"assignment.txt",'a')
+    f.write("\n\n\n**************  {}  Time: {}    **************".format(strr,datetime.now()))
+    f.close()
+
 
 #=====================
 # Show & Save Results

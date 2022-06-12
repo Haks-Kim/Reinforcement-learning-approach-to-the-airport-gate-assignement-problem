@@ -37,9 +37,9 @@ def d2(x):
 
 # choice3
 def d3(x):
-    if x <= 5:
+    if x == 0:
         g = 0 
-    elif x > 5 and x <= 10 :
+    elif x > 0 and x <= 10 :
         g = 1
     elif x >10 and x <=20 :
         g = 2
